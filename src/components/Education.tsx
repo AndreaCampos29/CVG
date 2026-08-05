@@ -1,4 +1,4 @@
-import { GraduationCap, Calendar, MapPin } from 'lucide-react'
+﻿import { GraduationCap, Calendar, MapPin } from 'lucide-react'
 import styles from './Education.module.css'
 
 const EDUCATION = [
@@ -38,7 +38,7 @@ export default function Education() {
         </div>
 
         <div className={styles.timeline}>
-          {/* Línea central */}
+          
           <div className={styles.centerLine} />
 
           {EDUCATION.map((edu, i) => {
@@ -50,9 +50,9 @@ export default function Education() {
                 className={`${styles.item} ${isLeft ? styles.left : styles.right} reveal`}
                 style={{ transitionDelay: `${i * 0.15}s` }}
               >
-                {/* Tarjeta */}
+                
                 <div className={`glass-card ${styles.card}`}>
-                  {/* Fecha al tope de la tarjeta */}
+                  
                   <div className={styles.dateRow}>
                     <Calendar size={14} />
                     <span>{edu.period}</span>
@@ -86,7 +86,7 @@ export default function Education() {
                   </p>
                 </div>
 
-                {/* Punto central (con conector a la línea) */}
+                
                 <div className={styles.dotWrap}>
                   <div className={styles.dot}>
                     <GraduationCap size={16} />

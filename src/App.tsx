@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import './index.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -11,7 +11,7 @@ import Aptitudes from './components/Aptitudes'
 import Contact from './components/Contact'
 
 function App() {
-  // Intersection Observer for scroll reveal animations
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

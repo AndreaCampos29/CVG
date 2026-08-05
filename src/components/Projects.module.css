@@ -1,4 +1,4 @@
-.projects {}
+﻿.projects {}
 
 .grid {
   display: grid;
@@ -124,7 +124,6 @@
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Decorative blob inside card */
 .deco {
   position: absolute;
   width: 250px;

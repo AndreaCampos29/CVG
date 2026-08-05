@@ -1,4 +1,4 @@
-import { CheckCircle2, Languages } from 'lucide-react'
+﻿import { CheckCircle2, Languages } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import styles from './Aptitudes.module.css'
 
@@ -44,7 +44,7 @@ export default function Aptitudes() {
     <section id="aptitudes" className={`section ${styles.aptitudes}`}>
       <div className="container">
         <div className={styles.grid}>
-          {/* Aptitudes */}
+          
           <div>
             <div className="reveal">
               <h2 className="section-title">Aptitudes</h2>
@@ -64,7 +64,7 @@ export default function Aptitudes() {
             </ul>
           </div>
 
-          {/* Idiomas */}
+          
           <div>
             <div className="reveal">
               <h2 className="section-title">

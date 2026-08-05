@@ -1,4 +1,4 @@
-.aptitudes {
+﻿.aptitudes {
   background: var(--bg-section-alt);
 }
 
@@ -9,7 +9,6 @@
   align-items: start;
 }
 
-/* Aptitudes list */
 .list {
   list-style: none;
   display: flex;
@@ -54,7 +53,6 @@
   text-shadow: 0 0 10px var(--accent-cyan);
 }
 
-/* Language cards */
 .langList {
   display: flex;
   flex-direction: column;

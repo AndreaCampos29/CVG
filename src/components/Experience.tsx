@@ -1,4 +1,4 @@
-import { Briefcase, Calendar } from 'lucide-react'
+﻿import { Briefcase, Calendar } from 'lucide-react'
 import styles from './Experience.module.css'
 
 const EXPERIENCES = [
@@ -29,7 +29,7 @@ export default function Experience() {
         <div className={styles.timeline}>
           {EXPERIENCES.map((exp, i) => (
             <div key={exp.id} id={exp.id} className={`${styles.item} reveal`} style={{ transitionDelay: `${i * 0.1}s` }}>
-              {/* Dot & line */}
+              
               <div className={styles.dotCol}>
                 <div className={styles.dot} style={{ background: exp.color }}>
                   <Briefcase size={16} />
@@ -37,7 +37,7 @@ export default function Experience() {
                 <div className={styles.line} />
               </div>
 
-              {/* Card */}
+              
               <div className={`glass-card ${styles.card}`}>
                 <div className={styles.cardHeader}>
                   <div>

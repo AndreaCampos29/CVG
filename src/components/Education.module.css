@@ -1,8 +1,7 @@
-.education {
+﻿.education {
   background: var(--bg-section-alt);
 }
 
-/* Contenedor general del timeline */
 .timeline {
   position: relative;
   max-width: 900px;
@@ -10,7 +9,6 @@
   padding-bottom: 2rem;
 }
 
-/* Línea vertical central */
 .centerLine {
   position: absolute;
   top: 0;
@@ -27,7 +25,6 @@
   z-index: 0;
 }
 
-/* Cada fila del timeline */
 .item {
   display: flex;
   align-items: center;
@@ -36,19 +33,16 @@
   width: 100%;
 }
 
-/* Izquierda: tarjeta a la izquierda, punto a la derecha */
 .left {
   flex-direction: row;
   justify-content: flex-start;
 }
 
-/* Derecha: punto a la izquierda, tarjeta a la derecha */
 .right {
   flex-direction: row-reverse;
   justify-content: flex-start;
 }
 
-/* Tarjeta ocupa ~45% del ancho */
 .card {
   width: calc(50% - 50px);
   padding: 1.8rem 2rem;
@@ -74,7 +68,6 @@
   box-shadow: var(--shadow-md), 0 0 20px rgba(255, 255, 255, 0.04);
 }
 
-/* Flecha que apunta al punto central */
 .left .card::after {
   content: '';
   position: absolute;
@@ -95,7 +88,6 @@
   border-right-color: rgba(255, 255, 255, 0.04);
 }
 
-/* Wrap del punto central */
 .dotWrap {
   position: absolute;
   left: 50%;
@@ -124,7 +116,6 @@
   box-shadow: 0 0 18px rgba(157, 78, 221, 0.25);
 }
 
-/* Fecha dentro de la tarjeta */
 .dateRow {
   display: flex;
   align-items: center;
@@ -144,7 +135,6 @@
   color: var(--accent-purple);
 }
 
-/* Estado */
 .statusRow {
   margin-bottom: 0.8rem;
 }
@@ -167,7 +157,6 @@
   box-shadow: 0 0 8px var(--accent-green);
 }
 
-/* Textos */
 .degree {
   font-family: var(--font-display);
   font-size: 1.25rem;
@@ -190,7 +179,6 @@
   color: var(--text-muted);
 }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
   .centerLine {
     left: 22px;

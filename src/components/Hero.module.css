@@ -1,4 +1,4 @@
-.hero {
+﻿.hero {
   position: relative;
   min-height: 100vh;
   scroll-margin-top: 80px;
@@ -9,7 +9,6 @@
   background: var(--gradient-hero);
 }
 
-/* Red de fondo y Glows */
 .hero::before {
   content: '';
   position: absolute;
@@ -21,10 +20,9 @@
 }
 
 .blob1, .blob2, .blob3 {
-  display: none; /* Eliminamos los blobs pastel */
+  display: none; 
 }
 
-/* Contenedor principal */
 .inner {
   position: relative;
   z-index: 1;
@@ -34,7 +32,6 @@
   gap: 4rem;
 }
 
-/* Columna de Texto */
 .textContent {
   flex: 1;
   max-width: 700px;
@@ -94,7 +91,6 @@
   margin-bottom: 3rem;
 }
 
-/* Botones de CTA */
 .cta {
   display: flex;
   gap: 1.2rem;
@@ -153,7 +149,6 @@
   transform: translateY(-3px);
 }
 
-/* Columna de Imagen */
 .imageWrap {
   position: relative;
   width: 420px;
@@ -192,7 +187,6 @@
   animation: float 8s ease-in-out infinite;
 }
 
-/* Scroll indicator */
 .scrollIndicator {
   position: absolute;
   bottom: 2rem;
@@ -220,7 +214,6 @@
   60% { transform: translateY(-6px) translateX(-50%); }
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .inner {
     flex-direction: column-reverse;

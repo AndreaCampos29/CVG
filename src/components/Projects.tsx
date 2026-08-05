@@ -1,4 +1,4 @@
-import { ExternalLink, ShoppingCart, Truck } from 'lucide-react'
+﻿import { ExternalLink, ShoppingCart, Truck } from 'lucide-react'
 import styles from './Projects.module.css'
 
 const PROJECTS = [
@@ -68,7 +68,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Decorative gradient circle */}
+              
               <div className={styles.deco} aria-hidden="true" />
             </article>
           ))}

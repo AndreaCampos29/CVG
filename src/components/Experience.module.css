@@ -1,4 +1,4 @@
-.experience {
+﻿.experience {
   background: var(--bg-primary);
 }
 
@@ -15,7 +15,6 @@
   align-items: flex-start;
 }
 
-/* Dot & vertical line */
 .dotCol {
   display: flex;
   flex-direction: column;
@@ -52,7 +51,6 @@
   min-height: 2rem;
 }
 
-/* Card */
 .card {
   flex: 1;
   padding: 2rem;
@@ -110,7 +108,6 @@
   border-radius: var(--radius-full);
 }
 
-/* Achievements list */
 .list {
   list-style: none;
   display: flex;

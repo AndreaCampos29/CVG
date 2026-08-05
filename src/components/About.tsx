@@ -1,4 +1,4 @@
-import { GraduationCap, Code2, Layers, MapPin, Calendar, Fingerprint } from 'lucide-react'
+﻿import { GraduationCap, Code2, Layers, MapPin, Calendar, Fingerprint } from 'lucide-react'
 import styles from './About.module.css'
 
 export default function About() {
@@ -11,7 +11,7 @@ export default function About() {
         </div>
 
         <div className={styles.content}>
-          {/* Tarjetas de texto animadas y estilizadas */}
+          
           <div className={styles.textCards}>
             
             <div className={`glass-card ${styles.textCard} reveal`} style={{ '--accent-color': 'var(--celeste)' } as React.CSSProperties}>
@@ -43,7 +43,7 @@ export default function About() {
             
           </div>
 
-          {/* Fila de información personal interactiva */}
+          
           <div className={`${styles.infoStrip} reveal`} style={{ transitionDelay: '0.45s' }}>
             <div className={styles.infoBadge}>
               <MapPin size={16} className={styles.badgeIcon} />

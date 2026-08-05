@@ -1,18 +1,18 @@
-import { Mail, Phone, ChevronDown, MapPin } from 'lucide-react'
+﻿import { Mail, Phone, ChevronDown, MapPin } from 'lucide-react'
 import profileImg from '../assets/profile.png'
 import styles from './Hero.module.css'
 
 export default function Hero() {
   return (
     <section id="hero" className={styles.hero}>
-      {/* Floating blobs de fondo */}
+      
       <div className={styles.blob1} aria-hidden="true" />
       <div className={styles.blob2} aria-hidden="true" />
       <div className={styles.blob3} aria-hidden="true" />
 
       <div className={`container ${styles.inner}`}>
         
-        {/* Texto principal */}
+        
         <div className={styles.textContent}>
           <h1 className={styles.name}>
             Andrea S.<br />
@@ -33,7 +33,7 @@ export default function Hero() {
             <span>Los Guayos, Edo. Carabobo · C.I.: 31.856.233</span>
           </div>
 
-          {/* Botones de contacto */}
+          
           <div className={styles.cta}>
             <a
               id="hero-gmail-btn"
@@ -73,7 +73,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Imagen del Perfil */}
+        
         <div className={styles.imageWrap}>
           <div className={styles.imageRing1} aria-hidden="true" />
           <div className={styles.imageRing2} aria-hidden="true" />
@@ -86,7 +86,7 @@ export default function Hero() {
 
       </div>
 
-      {/* Scroll indicator */}
+      
       <a href="#sobre-mi" className={styles.scrollIndicator} aria-label="Bajar a Sobre mí">
         <ChevronDown size={28} />
       </a>

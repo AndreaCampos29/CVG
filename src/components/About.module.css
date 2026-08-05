@@ -1,4 +1,4 @@
-.about {
+﻿.about {
   background: var(--bg-primary);
   position: relative;
 }
@@ -16,7 +16,6 @@
   margin: 0 auto;
 }
 
-/* Tarjetas de texto */
 .textCards {
   display: flex;
   flex-direction: column;
@@ -90,7 +89,6 @@
   font-weight: 600;
 }
 
-/* Tira de información */
 .infoStrip {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +132,6 @@
   font-weight: 600;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .textCard {
     flex-direction: column;

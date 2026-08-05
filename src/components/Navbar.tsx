@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import styles from './Navbar.module.css'
 
@@ -47,7 +47,7 @@ export default function Navbar() {
           <span className={styles.logoText}>Andrea Campos</span>
         </a>
 
-        {/* Desktop links */}
+        
         <nav className={styles.links}>
           {NAV_LINKS.map((l) => (
             <a
@@ -60,7 +60,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Mobile toggle */}
+        
         <button
           className={styles.toggle}
           onClick={() => setOpen((o) => !o)}
@@ -71,7 +71,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      
       <div className={`${styles.mobileMenu} ${open ? styles.mobileOpen : ''}`}>
         {NAV_LINKS.map((l) => (
           <a

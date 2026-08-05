@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Heart, ExternalLink } from 'lucide-react'
+﻿import { Mail, Phone, MapPin, Heart, ExternalLink } from 'lucide-react'
 import styles from './Contact.module.css'
 
 const CONTACTS = [

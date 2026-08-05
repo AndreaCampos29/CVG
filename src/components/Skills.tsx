@@ -1,10 +1,10 @@
-import styles from './Skills.module.css'
+﻿import styles from './Skills.module.css'
 
 interface Tech {
   name: string
-  icon: string        // devicon class
-  color: string       // color del badge
-  bg: string          // fondo suave
+  icon: string        
+  color: string       
+  bg: string          
 }
 
 const CATEGORIES: { title: string; desc: string; techs: Tech[] }[] = [

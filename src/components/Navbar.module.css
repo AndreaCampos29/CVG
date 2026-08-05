@@ -1,4 +1,4 @@
-.navbar {
+﻿.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -100,7 +100,6 @@
   color: var(--accent-cyan);
 }
 
-/* Mobile menu */
 .mobileMenu {
   display: none;
   flex-direction: column;
