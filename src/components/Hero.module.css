@@ -7,6 +7,7 @@
   justify-content: center;
   overflow: hidden;
   background: var(--gradient-hero);
+  padding-top: 80px; /* Evitar solapamiento del navbar */
 }
 
 .hero::before {
@@ -219,7 +220,6 @@
     flex-direction: column-reverse;
     text-align: center;
     gap: 3rem;
-    padding-top: 5rem;
   }
   
   .textContent {
@@ -239,10 +239,6 @@
 }
 
 @media (max-width: 480px) {
-  .inner {
-    padding-top: 6rem;
-  }
-
   .name {
     font-size: 2.8rem;
   }
@@ -257,5 +253,4 @@
   .ctaBtn {
     width: 100%;
   }
-}
 }
