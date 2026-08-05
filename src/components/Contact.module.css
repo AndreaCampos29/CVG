@@ -1,0 +1,157 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+/* Glow de fondo */
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 10rem);
+}
+
+/* Grid de 2 columnas — 4 tarjetas bien distribuidas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 3rem 0;
+  max-width: 860px;
+}
+
+/* Tarjeta */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1.8rem 2rem;
+  background: var(--gradient-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: 4px solid var(--border, var(--accent-cyan));
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md), 0 0 30px var(--glow, rgba(0, 240, 255, 0.15));
+  border-color: var(--accent, var(--accent-cyan));
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Icono */
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  background: var(--glow, rgba(0, 240, 255, 0.1));
+  color: var(--accent, var(--accent-cyan));
+  border: 1px solid var(--accent, var(--accent-cyan));
+  flex-shrink: 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover .iconWrap {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 20px var(--glow, rgba(0, 240, 255, 0.3));
+}
+
+/* Cuerpo del texto */
+.cardBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardLabel {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.cardDesc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Flecha externa */
+.arrow {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.card:hover .arrow {
+  color: var(--accent, var(--accent-cyan));
+  transform: translate(3px, -3px);
+}
+
+/* Ubicación */
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 4rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.heart {
+  display: inline;
+  vertical-align: middle;
+  color: #ff3366;
+  text-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+}
+
+.footerSub {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}

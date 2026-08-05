@@ -1,0 +1,223 @@
+.education {
+  background: var(--bg-section-alt);
+}
+
+/* Contenedor general del timeline */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 4rem auto 0;
+  padding-bottom: 2rem;
+}
+
+/* Línea vertical central */
+.centerLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 240, 255, 0.4),
+    rgba(157, 78, 221, 0.4),
+    rgba(255, 255, 255, 0.05)
+  );
+  z-index: 0;
+}
+
+/* Cada fila del timeline */
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Izquierda: tarjeta a la izquierda, punto a la derecha */
+.left {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Derecha: punto a la izquierda, tarjeta a la derecha */
+.right {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+/* Tarjeta ocupa ~45% del ancho */
+.card {
+  width: calc(50% - 50px);
+  padding: 1.8rem 2rem;
+  background: var(--gradient-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.left .card {
+  border-left: 4px solid var(--accent-cyan);
+}
+
+.right .card {
+  border-right: 4px solid var(--accent-purple);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md), 0 0 20px rgba(255, 255, 255, 0.04);
+}
+
+/* Flecha que apunta al punto central */
+.left .card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  border: 12px solid transparent;
+  border-left-color: rgba(255, 255, 255, 0.04);
+}
+
+.right .card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+  border: 12px solid transparent;
+  border-right-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Wrap del punto central */
+.dotWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  box-shadow: 0 0 18px rgba(0, 240, 255, 0.25);
+}
+
+.right .dot {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+  box-shadow: 0 0 18px rgba(157, 78, 221, 0.25);
+}
+
+/* Fecha dentro de la tarjeta */
+.dateRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.left .dateRow {
+  color: var(--accent-cyan);
+}
+
+.right .dateRow {
+  color: var(--accent-purple);
+}
+
+/* Estado */
+.statusRow {
+  margin-bottom: 0.8rem;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.activeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  box-shadow: 0 0 8px var(--accent-green);
+}
+
+/* Textos */
+.degree {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.institution {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .centerLine {
+    left: 22px;
+  }
+
+  .item {
+    flex-direction: row !important;
+    justify-content: flex-end;
+    padding-left: 60px;
+  }
+
+  .card {
+    width: 100%;
+    border-left: 4px solid var(--accent-cyan) !important;
+    border-right: none !important;
+  }
+
+  .right .card {
+    border-left-color: var(--accent-purple) !important;
+  }
+
+  .left .card::after, .right .card::after {
+    display: none;
+  }
+
+  .dotWrap {
+    left: 22px;
+    top: 50%;
+  }
+}
