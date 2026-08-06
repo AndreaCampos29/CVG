@@ -1,4 +1,4 @@
-﻿import { Mail, Phone, MapPin, Heart, ExternalLink } from 'lucide-react'
+import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
 import styles from './Contact.module.css'
 
 const CONTACTS = [
@@ -97,7 +97,7 @@ export default function Contact() {
 
         <footer className={styles.footer}>
           <p>
-            Hecho con <Heart size={14} className={styles.heart} /> por Andrea S. Campos A. · 2025
+            &copy; 2026 Andrea S. Campos A. Todos los derechos reservados.
           </p>
           <p className={styles.footerSub}>Ingeniería en Computación · UJAP</p>
         </footer>
