@@ -96,10 +96,9 @@ export default function Contact() {
         </div>
 
         <footer className={styles.footer}>
-          <p>
-            &copy; {new Date().getFullYear()} Andrea S. Campos A. Todos los derechos reservados.
+          <p className={styles.footerLine}>
+            &copy; {new Date().getFullYear()} &bull; ANDREA S. CAMPOS A. TODOS LOS DERECHOS RESERVADOS.
           </p>
-          <p className={styles.footerSub}>Ingeniería en Computación · UJAP</p>
         </footer>
       </div>
     </section>
