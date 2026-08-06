@@ -97,7 +97,7 @@ export default function Contact() {
 
         <footer className={styles.footer}>
           <p>
-            &copy; 2026 Andrea S. Campos A. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Andrea S. Campos A. Todos los derechos reservados.
           </p>
           <p className={styles.footerSub}>Ingeniería en Computación · UJAP</p>
         </footer>
